@@ -586,7 +586,35 @@ update-desktop-database ~/.local/share/applications
 
 ---
 
-# 16. Useful system checks
+## 16. Install Cockpit
+
+Install Cockpit:
+
+```bash
+sudo dnf install cockpit
+```
+
+Enable the Cockpit socket:
+
+```bash
+sudo systemctl enable --now cockpit.socket
+```
+
+Verify:
+
+```bash
+systemctl status cockpit.socket
+```
+
+Cockpit is normally accessed through:
+
+```text
+https://localhost:9090
+```
+
+---
+
+# 17. Useful system checks
 
 After completing the installation, these commands are useful for verifying the system.
 
@@ -640,7 +668,7 @@ virsh list --all
 
 ---
 
-# 17. Maintenance
+# 18. Maintenance
 
 ## Update RPM packages
 
@@ -667,7 +695,7 @@ Repeat for other Toolboxes when necessary.
 
 ---
 
-# 18. Simple Btrfs Maintenance
+# 19. Simple Btrfs Maintenance
 
 Fedora Workstation uses Btrfs by default. **No regular manual Btrfs maintenance is required for normal operation.**
 
