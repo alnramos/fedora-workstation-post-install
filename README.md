@@ -321,7 +321,8 @@ sudo dnf install \
   gnome-tweaks \
   gimp \
   inkscape \
-  audacity
+  audacity \
+  epiphany
 ```
 
 ### Google Chrome
