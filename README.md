@@ -557,6 +557,12 @@ sudo dnf install -y \
   mpv
 ```
 
+```bash
+sudo dnf install -y \
+  google-noto-sans-cjk-fonts \
+  google-noto-color-emoji-fonts
+```
+
 Create a desktop entry:
 
 ```bash
